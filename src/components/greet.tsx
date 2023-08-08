@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
+import { greetProps } from './greet.types'
 
-type greetProps = {
-  name?: String 
- 
-}
 export default function Greet(props: greetProps) {
  const [number1 , setMumber1] = useState<String>('') 
   const [number2, setMumber2] = useState<String>('') 
