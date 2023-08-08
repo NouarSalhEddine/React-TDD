@@ -1,31 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-type GreetProps = {
-  name?:String
+type greetProps = {
+  name?: String 
+ 
 }
-const Greet = (props: GreetProps) => {
-  const [input1 , setInput1] = React.useState<Number>()
-  const [input2, setInput2] = React.useState<Number>()
-  const [result, setResult] = React.useState<Number>()
+export default function Greet(props: greetProps) {
+ const [number1 , setMumber1] = useState<String>('') 
+  const [number2, setMumber2] = useState<String>('') 
+  const [result, setResult] = useState<Number>() 
   
-  const sum = () => {
-  setResult(Number(input1) + Number(input2)) 
+  const handleClick = () => {
+  setResult(Number(number1)+Number(number2))
 }
+
   return (
     <>
-      <div>
-        Hello {props.name}
-        <input onChange={(e)=> setInput1(Number(e.target.value))} type="number" placeholder='input1' />
-        <input onChange={(e)=> setInput2(Number(e.target.value))} type="number" placeholder='input2' />
-        <button onClick={sum}>add</button>
-        <div>
-        {String(result)}
-
-        </div>
-
-      </div>
+      <div>Hello {props.name}</div>
+      <input type="text" placeholder='input1' onChange={(e)=> setMumber1(e.target.value)} />
+      <hr />
+      <input type="text" placeholder='input2' onChange={(e)=> setMumber2(e.target.value)}  />
+      <button onClick={handleClick}>add</button>
+     {typeof result === 'number' && <h1>result : {result}</h1>}
     </>
+    
   )
 }
-
-export default Greet
