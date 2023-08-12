@@ -1,8 +1,8 @@
 import React from 'react'
-
-function ExerciceOne() {
+import { exerciceOneProps } from './ExerciceOneProps'
+function ExerciceOne(props:exerciceOneProps) {
   return (
-    <div>ExerciceOne</div>
+    <div>Hello</div>
   )
 }
 
