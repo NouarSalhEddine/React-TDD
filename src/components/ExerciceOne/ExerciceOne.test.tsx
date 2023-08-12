@@ -9,7 +9,7 @@ describe('Exercice one', () => {
 
   })
     it('exerciceOne render avec props name', () => {
-    render(<ExerciceOne {'wingo'} />)
+    render(<ExerciceOne name='wingo' />)
       const textElement = screen.getByText('Hello wingo')
       expect(textElement).toBeInTheDocument()
   })
