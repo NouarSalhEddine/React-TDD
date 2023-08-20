@@ -12,5 +12,12 @@ describe('Exercice one', () => {
     render(<ExerciceOne name='wingo' />)
       const textElement = screen.getByText('Hello wingo')
       expect(textElement).toBeInTheDocument()
+    })
+  it('test addition for two numbers', () => {
+    render(<ExerciceOne />)
+    const input1 = screen.getByPlaceholderText('input1')
+    const input2 = screen.getByPlaceholderText('input2')
+    const button = screen.getByText('add')
+    
   })
 })
