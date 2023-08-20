@@ -1,3 +1,3 @@
 export type exerciceOneProps = {
-  name : String
+  name?: String
 }
