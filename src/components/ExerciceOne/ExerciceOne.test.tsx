@@ -17,7 +17,6 @@ describe('Exercice one', () => {
     render(<ExerciceOne />)
     const input1 = screen.getByPlaceholderText('input1')
     const input2 = screen.getByPlaceholderText('input2')
-    const button = screen.getByText('add')
-    
+    const button = screen.getByText('add')  
   })
 })
