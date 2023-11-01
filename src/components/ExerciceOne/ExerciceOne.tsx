@@ -3,6 +3,7 @@ import { exerciceOneProps } from './ExerciceOneProps'
 function ExerciceOne(props: exerciceOneProps) {
   return (
     <div>Hello {props.name}</div>
+    
   )
 }
 
