@@ -1,5 +1,5 @@
 import React from 'react';
-import ExerciceOne from './components/ExerciceOne/ExerciceOne';
+import ExerciceOne from './components/Examples/ExampleOne';
 import './App.css';
 
 

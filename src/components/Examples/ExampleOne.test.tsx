@@ -1,5 +1,5 @@
 import React from "react";
-import ExerciceOne from "./ExerciceOne";
+import ExerciceOne from "./ExampleOne";
 import { render, screen } from "@testing-library/react";
 
 it("ExerciceOne", () => {
