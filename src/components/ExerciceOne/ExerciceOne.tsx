@@ -2,7 +2,7 @@ import React from 'react'
 
 function ExerciceOne() {
   return (
-    <div>salah</div>
+    <div>salah</div>  
   )
 }
 
