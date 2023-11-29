@@ -1,5 +1,5 @@
 import React from 'react';
-import ExampleTwo from './components/Examples/ExampleTwo';
+import exampleThree from './components/Examples/exampleThree';
 import './App.css';
 
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <ExampleTwo />
+        <exampleThree />
       </header>
     </div>
   );
