@@ -1,3 +1,3 @@
 export type exampleTwoProps = {
-  name?: String
+  name : String
 }

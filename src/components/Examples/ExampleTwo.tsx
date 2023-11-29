@@ -1,8 +1,10 @@
 import React from 'react'
+import { exampleTwoProps } from './ExampleTwoProps'
 
-function ExampleTwo() {
+function ExampleTwo(props: exampleTwoProps) {
+  
   return (
-    <div>salah</div>  
+    <div>hello { props.name}</div>  
   )
 }
 
