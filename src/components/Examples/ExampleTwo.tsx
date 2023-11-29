@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ExerciceOne() {
+function ExampleTwo() {
   return (
     <div>salah</div>  
   )
 }
 
-export default ExerciceOne
+export default ExampleTwo

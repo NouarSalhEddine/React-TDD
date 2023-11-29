@@ -1,9 +1,9 @@
 import React from "react";
-import ExerciceOne from "./ExampleOne";
+import ExampleTwo from "./ExampleTwo";
 import { render, screen } from "@testing-library/react";
 
-it("ExerciceOne", () => {
-  render(<ExerciceOne />);
+it("ExampleTwo", () => {
+  render(<ExampleTwo />);
   const text = screen.getByText("salah");
   expect(text).toBeInTheDocument();
 })
