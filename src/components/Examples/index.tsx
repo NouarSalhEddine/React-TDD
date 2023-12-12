@@ -5,6 +5,7 @@ function ExampleThree() {
 
   return (
     <form >
+      <div data-testid= "custom-element">test custom element</div>
       <div>
       <label htmlFor="job-location">job location</label>
         <input type="text" id="job-location" />

@@ -8,7 +8,8 @@ describe("ExampleThree", () => {
   it("renders", () => {
 
     render(<ExampleThree />);
-
+    const customElement = screen.getByTestId("custom-element");
+    expect(customElement).toBeInTheDocument();
     const nameLabelElement = screen.getByLabelText("job location");
     expect(nameLabelElement).toBeInTheDocument();
 
