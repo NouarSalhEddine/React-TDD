@@ -6,7 +6,7 @@ function ExampleThree() {
   return (
     <form >
       <div>
-        <label htmlFor="job-location">job location</label>
+        <label>job location</label>
         <input type="text" />
         
         <select name="job-location" >
