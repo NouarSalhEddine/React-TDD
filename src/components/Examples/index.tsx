@@ -2,13 +2,15 @@ import React from 'react'
 
 
 function ExampleThree() {
-  
+
   return (
     <form >
       <div>
-        <label>job location</label>
-        <input type="text" />
-        
+      <label htmlFor="job-location">job location</label>
+        <input type="text" id="job-location" />
+      </div>
+      <div>
+
         <select name="job-location" >
           <option value="us">usa</option>
           <option value="fr">france</option>
@@ -19,7 +21,7 @@ function ExampleThree() {
       <div>
         <button>submit</button>
       </div>
-    </form>  
+    </form>
   )
 }
 

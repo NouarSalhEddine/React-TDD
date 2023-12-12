@@ -1,14 +1,14 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import ExampleThree from "."; 
+import ExampleThree from ".";
 
 
 
 describe("ExampleThree", () => {
   it("renders", () => {
- 
+
     render(<ExampleThree />);
-    
+
     const nameLabelElement = screen.getByLabelText("job location");
     expect(nameLabelElement).toBeInTheDocument();
 
@@ -21,5 +21,5 @@ describe("ExampleThree", () => {
     const submitButtonElement = screen.getByRole("button");
     expect(submitButtonElement).toBeInTheDocument();
   });
-  
+
 });
