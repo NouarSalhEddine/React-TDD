@@ -1,13 +1,14 @@
 import React from 'react';
-import ExampleThree from './components/Examples/index';
+import Skills from './components/Examples/skills/index';
 import './App.css';
 
 
 function App() { 
+  const skillsData = ["younes", "khalil", "amani"];
   return (
     <div className="App">
       <header className="App-header">
-        <ExampleThree />
+        <Skills skills={skillsData} />
       </header>
     </div>
   );
