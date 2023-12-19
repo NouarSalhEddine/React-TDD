@@ -22,4 +22,12 @@ describe('Counter', () => {
     const countElement = screen.getByRole('heading');
     expect(countElement).toHaveTextContent('1');
   });
+  test('renders Counter component with count 2 after increment button click twice',async () => {
+    render(<Counter />);
+    const incrementButton = screen.getByRole('button', { name: '+' });
+    await userEvent.click(incrementButton);
+    await userEvent.click(incrementButton);
+    const countElement = screen.getByRole('heading');
+    expect(countElement).toHaveTextContent('2');
+  } );
 });
