@@ -1,5 +1,5 @@
 import React from 'react';
-import Counter from './components/Examples/counter/index';
+import Counter from './components/Examples/counter/counter';
 import './App.css';
 
 
