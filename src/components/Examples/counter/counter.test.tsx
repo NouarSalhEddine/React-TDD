@@ -46,4 +46,16 @@ describe('Counter', () => {
     const countElement = screen.getByRole('heading');
     expect(countElement).toHaveTextContent('10');
   });
+  test('elements are focused in the right order', () => {
+    render(<Counter />);
+    const incrementButton = screen.getByRole('button', { name: '+' });
+    const setButton = screen.getByRole('button', { name: 'set' });
+    const input = screen.getByRole('spinbutton');
+    userEvent.tab();
+    expect(incrementButton).toHaveFocus();
+    userEvent.tab();
+    expect(input).toHaveFocus();
+    userEvent.tab();
+    expect(setButton).toHaveFocus();
+  } );
 });
