@@ -1,16 +1,17 @@
 import React from 'react';
-import Counter from './components/Examples/counter/counter';
 import './App.css';
+import ThemeMode from './components/Examples/theme-mode/ThemeMode';
+import { ChakraProvider } from '@chakra-ui/react';
 
 
 function App() { 
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Counter  />
-      </header>
-    </div>
+
+        <ChakraProvider>
+        <ThemeMode  />
+      </ChakraProvider>
+
   );
 }
 
